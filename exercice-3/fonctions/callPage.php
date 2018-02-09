@@ -14,6 +14,9 @@ function callPage() {
 	elseif ($_SERVER['PHP_SELF'] === "/index.php") {
 		$page = "insertionFilm";
 	}
+	else {
+		$page = "insertionFilm";
+	}
 
 	$page = "./include/" . $page . ".inc.php";
 	$tableauPage = glob("./include/*.inc.php");
