@@ -46,7 +46,7 @@ une erreur sera affichée.
 
 	session_start();
 
-	include_once "./fonctions/connexionBDD.php"; 
+	include_once "./fonctions/connexion.php"; 
 	include_once "./fonctions/callPage.php";
 
 	include_once "./bin/conf_connexion.php"; //fichier de définition des constantes de connexion à la BDD
@@ -60,7 +60,13 @@ une erreur sera affichée.
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
-	<link rel="stylesheet" href="./assets/css/screen.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- appel TinyMCE -->
+	<script src="./assets/js/tinymce/tinymce.min.js"></script>
+	<script>tinymce.init({ 
+		    selector: 'textarea',
+			branding: false});</script>
 						
 	<title>LES FILMS</title>
 </head>
