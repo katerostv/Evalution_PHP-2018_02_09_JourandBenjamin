@@ -34,14 +34,14 @@ include_once "./fonctions/calculDevise.php";
 			<form action="#" method="POST">
 				<div id="montant">
 					<label for="montant">Entrez le montant à convertir : </label>
-					<input type="text" name="montant" placeholder="euros/USD"/>
+					<input type="text" name="montant" placeholder="euros/USD">
 				</div>
 				<div id="devise">
 					<label for="devise">Choississez votre devise (uniquement EUR ou USD) </label>
-					<input type="text" name="devise" placeholder="EUR/USD"/>
+					<input type="text" name="devise" placeholder="EUR/USD">
 				</div>
 				<div>
-					<input type="submit" name="convertirDevise" value="convertir"/>
+					<input type="submit" name="convertirDevise" value="convertir">
 				</div>
 			</form>
 		</section>
