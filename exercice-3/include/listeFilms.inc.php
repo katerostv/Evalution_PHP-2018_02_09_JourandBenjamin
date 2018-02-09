@@ -18,11 +18,13 @@
 			<tbody>";
 		
 			while ($row = $resultatRequete->fetch()) {
+				$nom = str_replace(' ', '_', $row['title']);
+				$nom = strtolower($nom);
 				echo "<tr>
 						<td>".$row['title']."</td>
 						<td>".$row['director']."</td>
 						<td>".$row['year_of_prod']."</td>
-						<td><a href=\"#\">voir plus >></a></td>
+						<td><a href=\"index.php?page=".$nom."\">voir plus >></a></td>
 					</tr>";
 			}
 
